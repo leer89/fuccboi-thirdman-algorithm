@@ -14,7 +14,10 @@ int main() {
 	int i;
 	int numOfSuitors;
 	list<int> suitors;
-	cout << "How many people want to try their luck? : ";
+	cout << "In an ancient land, a princess searches for a suitor. To test their luck, men come from far "
+		"and foreign lands to stand in line. The princess decides who will be her suitor by killing every "
+		" third man until only ONE remains.\nUsing Linked Lists, this program will determine what position "
+		"a man must stand in line in to live through the third-man gauntlet.\n Tell me how many men have arrived today? : " << endl;
 	cin >> numOfSuitors;
 
 	// adds element to list
@@ -38,6 +41,6 @@ int main() {
 
 		if (it == suitors.end()) it = suitors.begin(); // if at end, go back to begin
 	}
-	cout << "Last man standing : " << suitors.front() + 1 << endl; // list started at 0
+	cout << "To survive, you must stand in position : " << suitors.front() + 1 << endl; // list started at 0
 	return 0;
 }
